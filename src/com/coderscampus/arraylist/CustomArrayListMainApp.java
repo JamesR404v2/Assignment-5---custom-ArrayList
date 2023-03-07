@@ -80,6 +80,7 @@ myCustomList.add("element 41");
 System.out.println("Size of the CustomArrayList: " + myCustomList.getSize());
 
 // then you should validate that all the elements you've inserted actually exist in your data structure
+// the size is the amount of elements in the list, not the maximum capacity.
 for (int i=0; i<myCustomList.getSize(); i++) {
     System.out.println(myCustomList.get(i));
 }

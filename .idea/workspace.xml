@@ -49,20 +49,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CustomArrayListMainApp">
-    <configuration name="CustomArrayListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.coderscampus.arraylist.CustomArrayListMain" />
-      <module name="Assignment 5 - custom ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.coderscampus.arraylist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.test in Assignment 5 - custom ArrayList">
     <configuration name="CustomArrayListMainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.coderscampus.arraylist.CustomArrayListMainApp" />
       <module name="Assignment 5 - custom ArrayList" />
@@ -130,13 +117,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test in Assignment 5 - custom ArrayList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment 5 - custom ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.test in Assignment 5 - custom ArrayList" />
         <item itemvalue="Application.CustomArrayListMainApp" />
         <item itemvalue="JUnit.CustomListTest (1)" />
         <item itemvalue="JUnit.ArrayGrowTest" />
         <item itemvalue="JUnit.CustomListTest" />
-        <item itemvalue="Application.CustomArrayListMain" />
       </list>
     </recent_temporary>
   </component>
@@ -191,12 +192,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/coderscampus/arraylist/CustomArrayListMainApp.java</url>
-          <line>87</line>
+          <line>88</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/coderscampus/arraylist/CustomArrayList.java</url>
-          <line>36</line>
+          <line>37</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

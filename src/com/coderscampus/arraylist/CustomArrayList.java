@@ -5,20 +5,18 @@ import java.util.Arrays;
 public class CustomArrayList<T> implements CustomList<T>
 {
 	Object[] items = new Object[10];
-	private int size = 0;
+	private int populatedItemsSize = 0;
 
 	@Override
 	public boolean add(T item)
 	{
-		if (size == items.length)
+		if (populatedItemsSize == items.length)
 		{
 
 // create a temporary array and copy items into it
 //			Object[] tempItems = CustomArrayList.copyOf(items, items.length);
 			Object[] tempItems = copyOf(items, items.length);
 
-			System.out.println("items: " + Arrays.toString(items));
-			System.out.println("tempItems: " + Arrays.toString(tempItems));
 
 // destroy the original items array
 			items = null;
@@ -31,14 +29,6 @@ public class CustomArrayList<T> implements CustomList<T>
 
 
 
-//			code that may be incorrect, may be causing the NullPointerException
-//			for (int i = 0; i < tempItems.length; i++) {
-//				items = (Object[]) tempItems[i];
-//			}
-
-// print the updated items array just for debugging, delete afterwards.
-//			System.out.println(Arrays.toString(items));
-
 
 		}
 		// add the new item to the next available position in the array
@@ -49,8 +39,7 @@ public class CustomArrayList<T> implements CustomList<T>
 		items[nextAvailableIndex] = item;
 
 		// this is increasing the 'size' variable to track how many items are in the array.
-		size++;
-//		TODO: instead of incrementing the size variable by one each time, set the size to the actual size by calling the getSize method.
+		populatedItemsSize++;
 		return true;
 	}
 
@@ -65,15 +54,15 @@ public class CustomArrayList<T> implements CustomList<T>
 	@Override
 	public int getSize()
 	{
-		return size;
+		return populatedItemsSize;
 	}
 
 	//	@SuppressWarnings("unchecked")
 	@Override
 	public T get(int index)
 	{
-		if (index < 0 || index >= size) {
-			throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+		if (index < 0 || index >= populatedItemsSize) {
+			throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + populatedItemsSize);
 		}
 		return (T) items[index];
 	}
