@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class CustomArrayList<T> implements CustomList<T>
 {
 	Object[] items = new Object[10];
-	private int size = 10;
+	private int size = 0;
 
 	@Override
 	public boolean add(T item)
@@ -29,8 +29,7 @@ public class CustomArrayList<T> implements CustomList<T>
 // copy tempItems array into the new items array
 			System.arraycopy(tempItems, 0, items, 0, tempItems.length);
 
-//			update the variable describing the size of the items array to the new size.
-			size = items.length;
+
 
 //			code that may be incorrect, may be causing the NullPointerException
 //			for (int i = 0; i < tempItems.length; i++) {
@@ -49,8 +48,9 @@ public class CustomArrayList<T> implements CustomList<T>
 		}
 		items[nextAvailableIndex] = item;
 
-		// and we could increment the size, but we won't for the sake of the practice assignment.
-//		 size++;
+		// this is increasing the 'size' variable to track how many items are in the array.
+		size++;
+//		TODO: instead of incrementing the size variable by one each time, set the size to the actual size by calling the getSize method.
 		return true;
 	}
 
